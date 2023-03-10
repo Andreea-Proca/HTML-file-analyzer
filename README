@@ -1,0 +1,24 @@
+Proca Andreea-Dana 332CC
+Tema Flex - Analizator fisiere HTML
+
+Am folosit doua map, unul pentru tagul de style si celalalt pentru tagul de body,
+o variabila de tip int pentru a numerota tagurile div din body.
+
+In cel de style am folosit drept cheie tagurile continute in tagul style, iar ca
+valoare un vector ce contine atributele acelui tag cheie.
+
+In cel body am folosit drept cheie tagurile continute in tagul body, iar ca
+valoare un alt map care contine tagurile continute in acel tag cheie. In acest
+map am folosit ca cheie tagulrile, iar ca valoare un vector ce contine atributele
+sale.
+
+In functia main am deschis fisierul HTML si am pornit analizatorul flex. Apoi,
+am afisat tagurile din style, tagurile din body, tagurile din div-uri, lista de
+atribute din div-uri si lista de atrubute din tagurile style.
+
+Cand se ajunge la tagul de incidere al body sau al html, programul se inchide.
+
+In functie de tag sau atribut, se face match pe acesta si este salvat in intr-unul
+dintre map-uri sau vectori.
+
+Pentru rulare se executa comenzile "make" si apoi "./a.out <fisier_input.html>".
